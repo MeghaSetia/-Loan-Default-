@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ploan_first_return_days_50% <= -0.486\ngini = 0.5\nsamples = 3712\nvalue = [1856.0, 1856.0]", fillcolor="#ffffff"] ;
+1 [label="bank_account_type_Savings <= -0.692\ngini = 0.344\nsamples = 548\nvalue = [176.457, 624.02]", fillcolor="#71b9ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="ploan_first_return_days_min <= -0.748\ngini = 0.491\nsamples = 97\nvalue = [45.393, 59.649]", fillcolor="#d0e8f9"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+30 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 30 ;
+39 [label="ploan_additional charges_min_x <= -1.055\ngini = 0.306\nsamples = 451\nvalue = [131.064, 564.371]", fillcolor="#67b4eb"] ;
+1 -> 39 ;
+40 [label="(...)", fillcolor="#C0C0C0"] ;
+39 -> 40 ;
+41 [label="(...)", fillcolor="#C0C0C0"] ;
+39 -> 41 ;
+288 [label="ploan_return_days_min <= 1.13\ngini = 0.488\nsamples = 3164\nvalue = [1679.543, 1231.98]", fillcolor="#f8ddca"] ;
+0 -> 288 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+289 [label="ploan_first_return_days_min <= 0.038\ngini = 0.478\nsamples = 2803\nvalue = [1515.872, 991.09]", fillcolor="#f6d3ba"] ;
+288 -> 289 ;
+290 [label="(...)", fillcolor="#C0C0C0"] ;
+289 -> 290 ;
+507 [label="(...)", fillcolor="#C0C0C0"] ;
+289 -> 507 ;
+1104 [label="longitude_gps <= -0.158\ngini = 0.482\nsamples = 361\nvalue = [163.671, 240.89]", fillcolor="#c0e0f7"] ;
+288 -> 1104 ;
+1105 [label="(...)", fillcolor="#C0C0C0"] ;
+1104 -> 1105 ;
+1110 [label="(...)", fillcolor="#C0C0C0"] ;
+1104 -> 1110 ;
+}
